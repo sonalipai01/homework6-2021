@@ -14,6 +14,7 @@ header{
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -37,13 +38,14 @@ header{
     /*Don't forget to vertically and horizontally 
     align the element*/
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /*Requirement 5*/
 .package {
+  display: flex;
   margin: 12px;
   background: #fff;
   border-radius: 7px;
@@ -51,6 +53,8 @@ header{
   /*Your code here.*/
   /*Take a look at flex-basis*/
   flex-basis: 400px;
+  flex-direction: column;
+
 
   /*something wrong with price/package class for desktop view*/
 }
@@ -67,10 +71,13 @@ header{
 
 /*Requirement 7*/
 .gallery{
+  display: flex;
   min-height: 600px;
   /*Your code here again.*/
-
   /* need help with this */
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap; 
 }
 
 /*Requirement 8*/
@@ -92,7 +99,14 @@ header{
 /*Keyframes for animation*/
 @-webkit-keyframes logo_grow{
   /*Your code here.*/
-
+  from{
+    width: 25px;
+    opacity: 0;
+  }
+  to{
+    width: 420px;
+    opacity: 1;
+  }
   /* what goes here vs with the next one*/
 }
 
@@ -114,18 +128,21 @@ header{
   /*Requirement 10*/
   header{
     /*Your code here again.*/
-    justify-content: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   /*Requirement 10*/
   .nav_links{
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
   }
 
   /*Requirement 11*/
   .package {
     /*Your code here again.*/
+    display: flex;
     flex-basis: 230px;
 
   } 
@@ -153,7 +170,8 @@ header{
   }
   /*Requirement {15*/
   .nav_links{
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
   }
   /*Requirement 16*/
   .price{
