@@ -175,7 +175,7 @@ header{
   }
   /*Requirement 16*/
   .price{
-
+    align-items: flex-end;
   }
   /*Requirement 17*/
   .package{
@@ -185,8 +185,10 @@ header{
   }
   /*Requirement 18*/
   .gallery{
-
+    display: none;
+  }
+  #gallery{
+    display: none;
   }
  
 }
-
